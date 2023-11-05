@@ -25,6 +25,11 @@ function addTask() {
     }
     inputBox.value = "";  
 }
+inputBox.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) { 
+        addTask(); 
+    }
+});
 
 
 // for changing to checked and to remove from list when remove is clicked and task count will get updated when removed or added....
