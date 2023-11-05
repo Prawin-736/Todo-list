@@ -1,0 +1,183 @@
+/* ******general***** */
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* *****To-Do Box******* */
+.container{
+    width: 100%;
+    height:100vw;
+    background:linear-gradient(90deg,#D4145A,#FBB03B); 
+    padding:10px;   
+}
+.container h1{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   padding-top:70px;
+   font-size:50px;
+   font-weight:bolder;
+   color:white;
+   
+}
+.todobox{
+width: 100%;
+max-width: 540px;
+margin: 100px auto 20px;
+padding: 40px 30px 10px;
+border-radius:10px ;
+background-color:white;
+}   
+.row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:lightgrey ;
+    opacity:0.4;
+    border-radius: 10px;
+    padding-right:10px;
+    padding-left:10px;
+    /* margin-bottom:2px solid black;  */
+}
+.row i{
+    font-size:1.2rem;
+    outline: none;
+    border:none;
+}
+
+input{
+    flex:1;
+    background-color:transparent;
+    padding:15px 20px;
+    border:none;
+    outline:none;
+    font-weight:bolder;
+    font-size:20px;
+}
+button{
+    border:none;
+    outline:none;
+    padding:10px;
+    background-color:transparent;
+    cursor:pointer;
+}
+/* *****horizontal line******* */
+.horz{
+    display:flex;
+    padding:10px 10px 10PX 25px;
+    /* position: relative; */
+    justify-content: space-between  ;
+    border-bottom:2px solid lightgray;
+}
+.horz I{
+    font-size:1rem;
+    color:black;
+    padding-right: 10px;
+}
+.horz p{
+    color:black;
+    font-size:.8rem;
+    font-weight:thin;
+    margin-left:-40px;
+}
+.horz p:first-of-type{
+    position: relative;
+    left:-110px;
+}
+
+
+/* ********list******* */
+ul{
+    margin-top:25px;
+    margin-bottom:25px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+ul li{
+    list-style:none;
+    font-size:1.5rem;
+    font-weight:medium;
+    padding:5px 10px 5px 55px;
+    position:relative;
+}
+ul li:hover span{
+    color: black;
+}
+
+ul li::before{
+        content:'\f111';
+        font-family: 'Font Awesome 5 Free'; 
+        position: absolute;
+        font-size:20px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        top: 11px;
+        left:20px;
+        
+}
+.checked{
+    color:lightgray;
+    text-decoration:line-through;
+}
+
+ul li.checked::before{
+    content:'\f058';
+    font-family: 'Font Awesome 5 Free'; 
+    color:black !important;  
+}
+ul li span{
+    position:absolute;
+    right: 0px;
+    top: 5px;   
+    width:40px;
+    height:40px;
+    font-size:1.2rem;
+    color:transparent;
+    line-height:40px;
+    text-align:center;
+    border-radius:50%;
+}
+
+ul li span:hover{
+    color:black;
+    background-color:lightgrey;
+    opacity:0.4;
+    cursor: pointer;
+}
+
+/* *******bottom******* */
+.bottom-row{
+  display:flex; 
+  /* justify-content:space-between; */
+  flex-direction: row;
+  border-top:2px solid lightgray;
+  margin:-5px;
+  
+}
+
+.taskCount{
+    font-size:.8rem;
+    padding-right:3px; 
+    font-weight:bolder; 
+  
+}
+.bottom-row span{
+  font-size:.8rem;  
+}
+
+
+.bottom-row button{
+    font-size:.8rem;
+    /* margin-right: 30px; */
+}
+.bottom-row button:hover{
+    font-weight:bold;
+}
+.horz-click{
+    margin-left:180px;
+}
+
