@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List</title>
+        
+        <meta name="viewport" content="width=device-width ,initial-scale=1">
+        <meta charset="UTF-8">
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/3f2f8ea574.js" crossorigin="anonymous"></script>
+         <!-- Custom Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <header><h1>To-Do-List</h1></header>
+        <!-- input for adding to list -->
+            <div class="todobox">
+                <div class="row">
+                     <i class="fa-solid fa-list-check"></i>
+                    <input type="text" id="input-box" name="Task" placeholder="Type Your Todo List">
+                    <button onclick="addTask()" class="plus"><i class="fa-regular fa-square-plus"></i></button>
+                </div>
+                <div class="horz">
+                    <i class="fa-solid fa-check-double"></i>
+                    <p>Complete all tasks</p>
+                    <p>Clear completed</p>
+                </div>
+
+                <!-- for adding to list -->
+                <ul id="list-container">
+                    <!-- <li class="checked">task1</li>
+                    <li>task2</li>
+                    <li>task3</li> -->
+
+                </ul>
+
+                <!-- task count and buttons for filter -->
+                <section class="bottom-row">
+                    <div class="botton">
+                        <div id="taskCount">
+                        <span class="taskCount">0</span>
+                        <span>Tasks Left</span>
+                        <span class="horz-click">   
+                        <button id="allButton">All</button>
+                        <button id="uncompletedButton">Uncompleted</button>
+                        <button id="completedButton">Completed</button>
+                    </span>
+                        
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+
+     <!-- External Script file -->
+        <script src="script.js"></script>
+    </body>
+</html>
