@@ -26,7 +26,7 @@ function addTask() {
     inputBox.value = "";  
 }
 inputBox.addEventListener("keydown", function(event) {
-    if (event.keyCode === 13) { 
+    if (event === 13) { 
         addTask(); 
     }
 });
